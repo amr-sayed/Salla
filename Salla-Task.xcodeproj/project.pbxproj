@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4B1C63B2C88ECA000476C8B /* Salla_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C63A2C88ECA000476C8B /* Salla_TaskApp.swift */; };
+		B4B1C63D2C88ECA000476C8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C63C2C88ECA000476C8B /* ContentView.swift */; };
+		B4B1C63F2C88ECA200476C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B1C63E2C88ECA200476C8B /* Assets.xcassets */; };
+		B4B1C6422C88ECA200476C8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B1C6412C88ECA200476C8B /* Preview Assets.xcassets */; };
+		B4B1C64C2C88ECA200476C8B /* Salla_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C64B2C88ECA200476C8B /* Salla_TaskTests.swift */; };
+		B4B1C6562C88ECA200476C8B /* Salla_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C6552C88ECA200476C8B /* Salla_TaskUITests.swift */; };
+		B4B1C6582C88ECA200476C8B /* Salla_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C6572C88ECA200476C8B /* Salla_TaskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4B1C6482C88ECA200476C8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B1C62F2C88ECA000476C8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4B1C6362C88ECA000476C8B;
+			remoteInfo = "Salla-Task";
+		};
+		B4B1C6522C88ECA200476C8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B1C62F2C88ECA000476C8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4B1C6362C88ECA000476C8B;
+			remoteInfo = "Salla-Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4B1C6372C88ECA000476C8B /* Salla-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Salla-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4B1C63A2C88ECA000476C8B /* Salla_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salla_TaskApp.swift; sourceTree = "<group>"; };
+		B4B1C63C2C88ECA000476C8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B4B1C63E2C88ECA200476C8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4B1C6412C88ECA200476C8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B4B1C6472C88ECA200476C8B /* Salla-TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Salla-TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4B1C64B2C88ECA200476C8B /* Salla_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salla_TaskTests.swift; sourceTree = "<group>"; };
+		B4B1C6512C88ECA200476C8B /* Salla-TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Salla-TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4B1C6552C88ECA200476C8B /* Salla_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salla_TaskUITests.swift; sourceTree = "<group>"; };
+		B4B1C6572C88ECA200476C8B /* Salla_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salla_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4B1C6342C88ECA000476C8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4B1C6442C88ECA200476C8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4B1C64E2C88ECA200476C8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4B1C62E2C88ECA000476C8B = {
+			isa = PBXGroup;
+			children = (
+				B4B1C6392C88ECA000476C8B /* Salla-Task */,
+				B4B1C64A2C88ECA200476C8B /* Salla-TaskTests */,
+				B4B1C6542C88ECA200476C8B /* Salla-TaskUITests */,
+				B4B1C6382C88ECA000476C8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4B1C6382C88ECA000476C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4B1C6372C88ECA000476C8B /* Salla-Task.app */,
+				B4B1C6472C88ECA200476C8B /* Salla-TaskTests.xctest */,
+				B4B1C6512C88ECA200476C8B /* Salla-TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4B1C6392C88ECA000476C8B /* Salla-Task */ = {
+			isa = PBXGroup;
+			children = (
+				B4B1C63A2C88ECA000476C8B /* Salla_TaskApp.swift */,
+				B4B1C63C2C88ECA000476C8B /* ContentView.swift */,
+				B4B1C63E2C88ECA200476C8B /* Assets.xcassets */,
+				B4B1C6402C88ECA200476C8B /* Preview Content */,
+			);
+			path = "Salla-Task";
+			sourceTree = "<group>";
+		};
+		B4B1C6402C88ECA200476C8B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B4B1C6412C88ECA200476C8B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4B1C64A2C88ECA200476C8B /* Salla-TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4B1C64B2C88ECA200476C8B /* Salla_TaskTests.swift */,
+			);
+			path = "Salla-TaskTests";
+			sourceTree = "<group>";
+		};
+		B4B1C6542C88ECA200476C8B /* Salla-TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B4B1C6552C88ECA200476C8B /* Salla_TaskUITests.swift */,
+				B4B1C6572C88ECA200476C8B /* Salla_TaskUITestsLaunchTests.swift */,
+			);
+			path = "Salla-TaskUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4B1C6362C88ECA000476C8B /* Salla-Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4B1C65B2C88ECA200476C8B /* Build configuration list for PBXNativeTarget "Salla-Task" */;
+			buildPhases = (
+				B4B1C6332C88ECA000476C8B /* Sources */,
+				B4B1C6342C88ECA000476C8B /* Frameworks */,
+				B4B1C6352C88ECA000476C8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Salla-Task";
+			productName = "Salla-Task";
+			productReference = B4B1C6372C88ECA000476C8B /* Salla-Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4B1C6462C88ECA200476C8B /* Salla-TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4B1C65E2C88ECA200476C8B /* Build configuration list for PBXNativeTarget "Salla-TaskTests" */;
+			buildPhases = (
+				B4B1C6432C88ECA200476C8B /* Sources */,
+				B4B1C6442C88ECA200476C8B /* Frameworks */,
+				B4B1C6452C88ECA200476C8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4B1C6492C88ECA200476C8B /* PBXTargetDependency */,
+			);
+			name = "Salla-TaskTests";
+			productName = "Salla-TaskTests";
+			productReference = B4B1C6472C88ECA200476C8B /* Salla-TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B4B1C6502C88ECA200476C8B /* Salla-TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4B1C6612C88ECA200476C8B /* Build configuration list for PBXNativeTarget "Salla-TaskUITests" */;
+			buildPhases = (
+				B4B1C64D2C88ECA200476C8B /* Sources */,
+				B4B1C64E2C88ECA200476C8B /* Frameworks */,
+				B4B1C64F2C88ECA200476C8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4B1C6532C88ECA200476C8B /* PBXTargetDependency */,
+			);
+			name = "Salla-TaskUITests";
+			productName = "Salla-TaskUITests";
+			productReference = B4B1C6512C88ECA200476C8B /* Salla-TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4B1C62F2C88ECA000476C8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B4B1C6362C88ECA000476C8B = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B4B1C6462C88ECA200476C8B = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B4B1C6362C88ECA000476C8B;
+					};
+					B4B1C6502C88ECA200476C8B = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B4B1C6362C88ECA000476C8B;
+					};
+				};
+			};
+			buildConfigurationList = B4B1C6322C88ECA000476C8B /* Build configuration list for PBXProject "Salla-Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4B1C62E2C88ECA000476C8B;
+			productRefGroup = B4B1C6382C88ECA000476C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4B1C6362C88ECA000476C8B /* Salla-Task */,
+				B4B1C6462C88ECA200476C8B /* Salla-TaskTests */,
+				B4B1C6502C88ECA200476C8B /* Salla-TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4B1C6352C88ECA000476C8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B1C6422C88ECA200476C8B /* Preview Assets.xcassets in Resources */,
+				B4B1C63F2C88ECA200476C8B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4B1C6452C88ECA200476C8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4B1C64F2C88ECA200476C8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4B1C6332C88ECA000476C8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B1C63D2C88ECA000476C8B /* ContentView.swift in Sources */,
+				B4B1C63B2C88ECA000476C8B /* Salla_TaskApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4B1C6432C88ECA200476C8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B1C64C2C88ECA200476C8B /* Salla_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4B1C64D2C88ECA200476C8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B1C6562C88ECA200476C8B /* Salla_TaskUITests.swift in Sources */,
+				B4B1C6582C88ECA200476C8B /* Salla_TaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4B1C6492C88ECA200476C8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4B1C6362C88ECA000476C8B /* Salla-Task */;
+			targetProxy = B4B1C6482C88ECA200476C8B /* PBXContainerItemProxy */;
+		};
+		B4B1C6532C88ECA200476C8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4B1C6362C88ECA000476C8B /* Salla-Task */;
+			targetProxy = B4B1C6522C88ECA200476C8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B4B1C6592C88ECA200476C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4B1C65A2C88ECA200476C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4B1C65C2C88ECA200476C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Salla-Task/Preview Content\"";
+				DEVELOPMENT_TEAM = SNUGF62YFK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salla.Salla-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4B1C65D2C88ECA200476C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Salla-Task/Preview Content\"";
+				DEVELOPMENT_TEAM = SNUGF62YFK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salla.Salla-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B4B1C65F2C88ECA200476C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SNUGF62YFK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salla.Salla-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salla-Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salla-Task";
+			};
+			name = Debug;
+		};
+		B4B1C6602C88ECA200476C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SNUGF62YFK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salla.Salla-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salla-Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salla-Task";
+			};
+			name = Release;
+		};
+		B4B1C6622C88ECA200476C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SNUGF62YFK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salla.Salla-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Salla-Task";
+			};
+			name = Debug;
+		};
+		B4B1C6632C88ECA200476C8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SNUGF62YFK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salla.Salla-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Salla-Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4B1C6322C88ECA000476C8B /* Build configuration list for PBXProject "Salla-Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4B1C6592C88ECA200476C8B /* Debug */,
+				B4B1C65A2C88ECA200476C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4B1C65B2C88ECA200476C8B /* Build configuration list for PBXNativeTarget "Salla-Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4B1C65C2C88ECA200476C8B /* Debug */,
+				B4B1C65D2C88ECA200476C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4B1C65E2C88ECA200476C8B /* Build configuration list for PBXNativeTarget "Salla-TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4B1C65F2C88ECA200476C8B /* Debug */,
+				B4B1C6602C88ECA200476C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4B1C6612C88ECA200476C8B /* Build configuration list for PBXNativeTarget "Salla-TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4B1C6622C88ECA200476C8B /* Debug */,
+				B4B1C6632C88ECA200476C8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4B1C62F2C88ECA000476C8B /* Project object */;
+}
