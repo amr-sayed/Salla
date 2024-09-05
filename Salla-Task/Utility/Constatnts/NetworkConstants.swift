@@ -16,6 +16,6 @@ public enum NetworkConstants {
     
     static let timeoutIntervalForRequest: Double = 120
     private static func getBaseUrl() -> String {
-        return "http://teamappapi.tlt.co.com/api/"
+        return "https://api.salla.dev/store/v1"
     }
 }

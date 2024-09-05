@@ -8,5 +8,4 @@
 import Foundation
 
 enum Constants {
-    static let imageBaseUrl = "http://lemonada.tlt.co.com/"
 }

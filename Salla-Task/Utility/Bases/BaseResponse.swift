@@ -7,8 +7,14 @@
 
 import Foundation
 
-struct BaseResponse: Decodable {
-    var status: Int?
-    var title: String?
-    var Message: String?
+struct BaseResponse<T: Decodable>: Decodable  {
+    var status: Int
+    var success: Bool
+    var data: T
+    let cursor: Cursor?
+}
+
+struct Cursor: Decodable {
+    let current: String
+    let next: String?
 }

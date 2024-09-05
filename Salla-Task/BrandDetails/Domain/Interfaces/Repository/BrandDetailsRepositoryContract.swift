@@ -1,0 +1,14 @@
+//
+//  BrandDetailsRepositoryContract.swift
+//  Salla-Task
+//
+//  Created by Amr Ahmed on 05/09/2024.
+//
+
+import Foundation
+import Combine
+
+protocol BrandDetailsRepositoryContract {
+    func loadBrandDetails(page: Int, perPage: Int) ->
+        AnyPublisher<BaseResponse<[Product]>, Error>
+}

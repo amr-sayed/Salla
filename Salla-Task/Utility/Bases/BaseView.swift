@@ -19,7 +19,7 @@ struct BaseView<Content>: View where Content: View {
         ZStack {
             content
             if isLoading {
-                LoadingView()
+//                LoadingView()
             }
             
         }

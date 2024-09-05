@@ -28,7 +28,7 @@ final class APIService: NSObject,
     private override init() {
         self.progressSubject = .init()
         self.serviceQueue = .init(
-            label: "com.natsolutions.Lemonada.service",
+            label: "com.Salla",
             qos: .userInteractive,
             attributes: .concurrent
         )
@@ -38,63 +38,20 @@ final class APIService: NSObject,
     func request<T: Decodable>(using request: URLRequest,
                                responseType: T.Type = T.self,
                                decoder: JSONDecoder = .init(),
-                               retry: Int = NetworkConstants.retries) -> AnyPublisher<T, ApiError> {
+                               retry: Int = NetworkConstants.retries) -> AnyPublisher<T, Error> {
         
         print("APIService will call request", request)
         
         return session.dataTaskPublisher(for: request)
-            .retry(retry)
-            .print()
             .tryMap { output in
-                var errorResult =  ApiError()
-                var data = Data()
-                if let response = output.response as? HTTPURLResponse {
-                  
-                    do {
-                        errorResult = try decoder.decode(ApiError.self, from: output.data)
-                        print(errorResult)
-                    } catch let DecodingError.typeMismatch(type, context) {
-                        print("Type '\(type)' mismatch:", context.debugDescription)
-                        print("codingPath:", context.codingPath)
-                    } catch {
-                        print("Decoding error: \(error)")
-                    }
-                    if errorResult.Status != true {
-                        throw errorResult
-                    } else{
-                        data = output.data
-                    }
+                guard let httpResponse = output.response as? HTTPURLResponse,
+                      (200...299).contains(httpResponse.statusCode) else {
+                    throw URLError(.badServerResponse)
                 }
-                return data
+                return output.data
             }
-            .mapError{ error in
-                return error
-            }
-            .receive(on: serviceQueue)
             .decode(type: T.self, decoder: decoder)
-            .mapError(handleError(using:))
+            .receive(on: serviceQueue)
             .eraseToAnyPublisher()
-    }
-    
-    func handleError(using error: Error) -> ApiError {
-        print("APIService did throw error", error)
-        guard let error = error as? ApiError else { return
-            ApiError(title: "unexpected", Status: false)
-        }
-        return error
-    }
-}
-
-struct ApiError: Decodable, Error {
-    var Message: String?
-    var Status: Bool?
-    init() {
-        Message = ""
-        Status = false
-    }
-    
-    init(title: String, Status: Bool){
-        self.Message = title
-        self.Status = Status
     }
 }

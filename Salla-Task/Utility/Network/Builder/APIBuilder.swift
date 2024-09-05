@@ -76,13 +76,6 @@ public class APIBuilder {
                 
                 self.urlRequest.url = components?.url
             }
-            
-        case .body2(let params):
-            do {
-                self.urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
-            } catch {
-                fatalError("Could not serialize \(params)")
-            }
         }
         
         return self
@@ -94,15 +87,6 @@ public class APIBuilder {
         }
         
         self.urlRequest.setValue(ContentType.json, forHTTPHeaderField: HTTPHeader.contentType)
-        
-        let uuid = UUID().uuidString
-        
-//        if let bearer = token {
-//            self.urlRequest.setValue("Bearer \(bearer)", forHTTPHeaderField: HTTPHeader.authentication)
-//        }
-        
-//        self.urlRequest.setValue(EnvironmentManager.shared.string(key: .apigeeHost),
-//                                 forHTTPHeaderField: HTTPHeader.apigeeHost)
         
         return self.urlRequest
     }

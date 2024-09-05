@@ -10,6 +10,5 @@ import Foundation
 public typealias HTTPHeaders = [String: String]
 public enum HTTPHeader {
     static let contentType = "Content-Type"
-    static let authentication = "Authorization"
  
 }
