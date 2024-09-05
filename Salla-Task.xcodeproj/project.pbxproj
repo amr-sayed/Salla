@@ -21,11 +21,20 @@
 		B4AE7F402C89B6DD00D9AFED /* BrandDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F3F2C89B6DD00D9AFED /* BrandDetailsService.swift */; };
 		B4AE7F422C89B9B200D9AFED /* BrandDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F412C89B9B200D9AFED /* BrandDetailsRequest.swift */; };
 		B4AE7F442C89BB5700D9AFED /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F432C89BB5700D9AFED /* ProductView.swift */; };
+		B4AE7F4C2C89D3A700D9AFED /* BrandDetailsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F4B2C89D3A700D9AFED /* BrandDetailsServiceTest.swift */; };
+		B4AE7F4E2C89D4FD00D9AFED /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F4D2C89D4FD00D9AFED /* MockAPIService.swift */; };
+		B4AE7F502C89D60C00D9AFED /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F4F2C89D60C00D9AFED /* MockData.swift */; };
+		B4AE7F522C89E08D00D9AFED /* BrandDetailsMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B4AE7F512C89E08D00D9AFED /* BrandDetailsMockResponse.json */; };
+		B4AE7F542C89E33D00D9AFED /* BrandDetailsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F532C89E33D00D9AFED /* BrandDetailsRepositoryTests.swift */; };
+		B4AE7F572C89E79900D9AFED /* MockValidBrandDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F562C89E79900D9AFED /* MockValidBrandDetailsService.swift */; };
+		B4AE7F592C89E80D00D9AFED /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F582C89E80D00D9AFED /* Publisher.swift */; };
+		B4AE7F5B2C89E86800D9AFED /* MockFailureAccountNumberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F5A2C89E86800D9AFED /* MockFailureAccountNumberService.swift */; };
+		B4AE7F5E2C8A30C100D9AFED /* BrandDetailsUsecaseTetst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F5D2C8A30C100D9AFED /* BrandDetailsUsecaseTetst.swift */; };
+		B4AE7F612C8A33EC00D9AFED /* BrandDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE7F602C8A33EC00D9AFED /* BrandDetailsViewModelTests.swift */; };
 		B4B1C63B2C88ECA000476C8B /* Salla_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C63A2C88ECA000476C8B /* Salla_TaskApp.swift */; };
 		B4B1C63D2C88ECA000476C8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C63C2C88ECA000476C8B /* ContentView.swift */; };
 		B4B1C63F2C88ECA200476C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B1C63E2C88ECA200476C8B /* Assets.xcassets */; };
 		B4B1C6422C88ECA200476C8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B1C6412C88ECA200476C8B /* Preview Assets.xcassets */; };
-		B4B1C64C2C88ECA200476C8B /* Salla_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C64B2C88ECA200476C8B /* Salla_TaskTests.swift */; };
 		B4B1C6562C88ECA200476C8B /* Salla_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C6552C88ECA200476C8B /* Salla_TaskUITests.swift */; };
 		B4B1C6582C88ECA200476C8B /* Salla_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C6572C88ECA200476C8B /* Salla_TaskUITestsLaunchTests.swift */; };
 		B4B1C7292C88ED1000476C8B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1C69D2C88ED1000476C8B /* Color.swift */; };
@@ -118,13 +127,22 @@
 		B4AE7F3F2C89B6DD00D9AFED /* BrandDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandDetailsService.swift; sourceTree = "<group>"; };
 		B4AE7F412C89B9B200D9AFED /* BrandDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandDetailsRequest.swift; sourceTree = "<group>"; };
 		B4AE7F432C89BB5700D9AFED /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		B4AE7F4B2C89D3A700D9AFED /* BrandDetailsServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandDetailsServiceTest.swift; sourceTree = "<group>"; };
+		B4AE7F4D2C89D4FD00D9AFED /* MockAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		B4AE7F4F2C89D60C00D9AFED /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		B4AE7F512C89E08D00D9AFED /* BrandDetailsMockResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BrandDetailsMockResponse.json; sourceTree = "<group>"; };
+		B4AE7F532C89E33D00D9AFED /* BrandDetailsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandDetailsRepositoryTests.swift; sourceTree = "<group>"; };
+		B4AE7F562C89E79900D9AFED /* MockValidBrandDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockValidBrandDetailsService.swift; sourceTree = "<group>"; };
+		B4AE7F582C89E80D00D9AFED /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
+		B4AE7F5A2C89E86800D9AFED /* MockFailureAccountNumberService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFailureAccountNumberService.swift; sourceTree = "<group>"; };
+		B4AE7F5D2C8A30C100D9AFED /* BrandDetailsUsecaseTetst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandDetailsUsecaseTetst.swift; sourceTree = "<group>"; };
+		B4AE7F602C8A33EC00D9AFED /* BrandDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		B4B1C6372C88ECA000476C8B /* Salla-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Salla-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B1C63A2C88ECA000476C8B /* Salla_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salla_TaskApp.swift; sourceTree = "<group>"; };
 		B4B1C63C2C88ECA000476C8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4B1C63E2C88ECA200476C8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4B1C6412C88ECA200476C8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4B1C6472C88ECA200476C8B /* Salla-TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Salla-TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4B1C64B2C88ECA200476C8B /* Salla_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salla_TaskTests.swift; sourceTree = "<group>"; };
 		B4B1C6512C88ECA200476C8B /* Salla-TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Salla-TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B1C6552C88ECA200476C8B /* Salla_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salla_TaskUITests.swift; sourceTree = "<group>"; };
 		B4B1C6572C88ECA200476C8B /* Salla_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salla_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -256,6 +274,83 @@
 			path = Usecase;
 			sourceTree = "<group>";
 		};
+		B4AE7F452C89D2D900D9AFED /* BrandDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B4AE7F552C89E78200D9AFED /* Mock */,
+				B4AE7F462C89D34B00D9AFED /* Presentation */,
+				B4AE7F482C89D35B00D9AFED /* Domain */,
+				B4AE7F472C89D35300D9AFED /* Data */,
+			);
+			path = BrandDetails;
+			sourceTree = "<group>";
+		};
+		B4AE7F462C89D34B00D9AFED /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B4AE7F5F2C8A33CA00D9AFED /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B4AE7F472C89D35300D9AFED /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B4AE7F4A2C89D36E00D9AFED /* Repository */,
+				B4AE7F492C89D36700D9AFED /* Service */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B4AE7F482C89D35B00D9AFED /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B4AE7F5C2C8A30A600D9AFED /* Usecase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B4AE7F492C89D36700D9AFED /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B4AE7F4B2C89D3A700D9AFED /* BrandDetailsServiceTest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B4AE7F4A2C89D36E00D9AFED /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B4AE7F532C89E33D00D9AFED /* BrandDetailsRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B4AE7F552C89E78200D9AFED /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B4AE7F562C89E79900D9AFED /* MockValidBrandDetailsService.swift */,
+				B4AE7F5A2C89E86800D9AFED /* MockFailureAccountNumberService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		B4AE7F5C2C8A30A600D9AFED /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				B4AE7F5D2C8A30C100D9AFED /* BrandDetailsUsecaseTetst.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		B4AE7F5F2C8A33CA00D9AFED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4AE7F602C8A33EC00D9AFED /* BrandDetailsViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		B4B1C62E2C88ECA000476C8B = {
 			isa = PBXGroup;
 			children = (
@@ -308,7 +403,10 @@
 		B4B1C64A2C88ECA200476C8B /* Salla-TaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				B4B1C64B2C88ECA200476C8B /* Salla_TaskTests.swift */,
+				B4AE7F512C89E08D00D9AFED /* BrandDetailsMockResponse.json */,
+				B4AE7F4F2C89D60C00D9AFED /* MockData.swift */,
+				B4AE7F4D2C89D4FD00D9AFED /* MockAPIService.swift */,
+				B4AE7F452C89D2D900D9AFED /* BrandDetails */,
 			);
 			path = "Salla-TaskTests";
 			sourceTree = "<group>";
@@ -360,6 +458,7 @@
 				B4B1C69E2C88ED1000476C8B /* Date.swift */,
 				B4B1C69F2C88ED1000476C8B /* UIFont.swift */,
 				B4AE7F262C8907A100D9AFED /* Double.swift */,
+				B4AE7F582C89E80D00D9AFED /* Publisher.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -838,6 +937,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4AE7F522C89E08D00D9AFED /* BrandDetailsMockResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,6 +1082,7 @@
 				B4B1C7412C88ED1000476C8B /* APIBuilder.swift in Sources */,
 				B4B1C73E2C88ED1000476C8B /* ErrorPriority.swift in Sources */,
 				B4B1C74F2C88ED1000476C8B /* CapitalLetterRule.swift in Sources */,
+				B4AE7F592C89E80D00D9AFED /* Publisher.swift in Sources */,
 				B4B1C7382C88ED1000476C8B /* ErrorType+Code.swift in Sources */,
 				B4B1C7512C88ED1000476C8B /* MinimumDigitsRule.swift in Sources */,
 				B4B1C73C2C88ED1000476C8B /* ErrorType+Style.swift in Sources */,
@@ -1028,7 +1129,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B1C64C2C88ECA200476C8B /* Salla_TaskTests.swift in Sources */,
+				B4AE7F542C89E33D00D9AFED /* BrandDetailsRepositoryTests.swift in Sources */,
+				B4AE7F4E2C89D4FD00D9AFED /* MockAPIService.swift in Sources */,
+				B4AE7F502C89D60C00D9AFED /* MockData.swift in Sources */,
+				B4AE7F572C89E79900D9AFED /* MockValidBrandDetailsService.swift in Sources */,
+				B4AE7F5E2C8A30C100D9AFED /* BrandDetailsUsecaseTetst.swift in Sources */,
+				B4AE7F5B2C89E86800D9AFED /* MockFailureAccountNumberService.swift in Sources */,
+				B4AE7F612C8A33EC00D9AFED /* BrandDetailsViewModelTests.swift in Sources */,
+				B4AE7F4C2C89D3A700D9AFED /* BrandDetailsServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1249,6 +1357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SNUGF62YFK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -1270,6 +1379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SNUGF62YFK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -1290,6 +1400,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SNUGF62YFK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salla.Salla-TaskUITests";
@@ -1309,6 +1420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SNUGF62YFK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salla.Salla-TaskUITests";

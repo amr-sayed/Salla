@@ -17,7 +17,7 @@ class BrandDetailsUsecase: BrandDetailsUsecaseContract {
         self.repository = repository
     }
 
-    func excute(page: Int, perPage: Int) -> AnyPublisher<BaseResponse<[Product]>, any Error> {
+    func excute(page: Int, perPage: Int) -> AnyPublisher<BaseResponse<[Product]>, BaseError> {
         
         return self.repository
             .loadBrandDetails(page: page, perPage: perPage)

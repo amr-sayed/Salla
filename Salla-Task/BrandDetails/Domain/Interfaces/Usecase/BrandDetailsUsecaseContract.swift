@@ -10,5 +10,5 @@ import Combine
 
 protocol BrandDetailsUsecaseContract {
     
-    func excute(page: Int, perPage: Int) -> AnyPublisher<BaseResponse<[Product]>, Error>
+    func excute(page: Int, perPage: Int) -> AnyPublisher<BaseResponse<[Product]>, BaseError>
 }

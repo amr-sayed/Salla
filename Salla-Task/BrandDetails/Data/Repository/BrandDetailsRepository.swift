@@ -17,7 +17,7 @@ class BrandDetailsRepository: BrandDetailsRepositoryContract {
         self.service = service
     }
     
-    func loadBrandDetails(page: Int, perPage: Int) -> AnyPublisher<BaseResponse<[Product]>, Error> {
+    func loadBrandDetails(page: Int, perPage: Int) -> AnyPublisher<BaseResponse<[Product]>, BaseError> {
         service.loadBrandDetails(page: page, perPage: perPage)
     }
     

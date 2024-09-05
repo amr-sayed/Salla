@@ -10,5 +10,5 @@ import Combine
 
 protocol BrandDetailsServiceContract {
     func loadBrandDetails(page: Int, perPage: Int) ->
-        AnyPublisher<BaseResponse<[Product]>, Error>
+        AnyPublisher<BaseResponse<[Product]>, BaseError>
 }

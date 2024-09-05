@@ -11,6 +11,7 @@ import Security
 /// Singleton Class to handle Network Requests
 final class APIService: NSObject,
                         APIServiceContract, URLSessionDelegate{
+    
     /// Singleton instance of APIService class
     static let shared = APIService()
     
@@ -38,7 +39,7 @@ final class APIService: NSObject,
     func request<T: Decodable>(using request: URLRequest,
                                responseType: T.Type = T.self,
                                decoder: JSONDecoder = .init(),
-                               retry: Int = NetworkConstants.retries) -> AnyPublisher<T, Error> {
+                               retry: Int = NetworkConstants.retries) -> AnyPublisher<BaseResponse<T>, BaseError> {
         
         print("APIService will call request", request)
         
@@ -50,8 +51,31 @@ final class APIService: NSObject,
                 }
                 return output.data
             }
-            .decode(type: T.self, decoder: decoder)
+            .decode(type: BaseResponse<T>.self, decoder: decoder)
+            .mapError(handleError(using:))
             .receive(on: serviceQueue)
             .eraseToAnyPublisher()
+    }
+    
+    func handleError(using error: Error) -> BaseError {
+        print("APIService did throw error", error)
+        
+        switch error {
+        case URLError.networkConnectionLost,
+            URLError.notConnectedToInternet:
+            return ErrorResolver.shared.getError(for: .connection)
+            
+        case is URLError:
+            return ErrorResolver.shared.getError(for: .unwrappedHttpServer)
+            
+        case is DecodingError:
+            return ErrorResolver.shared.getError(for: .mapping)
+            
+        default:
+            guard let error = error as? BaseError else { return
+                ErrorResolver.shared.getError(for: .unexpected)
+            }
+            return error
+        }
     }
 }
