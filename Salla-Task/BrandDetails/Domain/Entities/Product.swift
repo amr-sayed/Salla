@@ -24,7 +24,7 @@ struct Product: Codable, Equatable {
     let quantity: Int?
     let maxQuantity: Int?
     let discountEnds: Int?
-    let isTaxable: Bool
+    let isTaxable: Bool?
     let hasReadMore: Bool?
     let canAddNote: Bool?
     let canShowRemainedQuantity: Bool?
@@ -38,8 +38,74 @@ struct Product: Codable, Equatable {
     let isRequireShipping: Bool?
     let weight: Double?
     let calories: Double?
-    let image: Image?
+    let image: ImageModel?
     let currency: String?
+    
+    init(
+           id: String? = nil,
+           sku: String? = nil,
+           name: String? = nil,
+           description: String? = nil,
+           url: String? = nil,
+           promotionTitle: String? = nil,
+           subtitle: String? = nil,
+           type: String? = nil,
+           status: String? = nil,
+           price: Double? = nil,
+           regularPrice: Double? = nil,
+           startingPrice: Double? = nil,
+           quantity: Int? = nil,
+           maxQuantity: Int? = nil,
+           discountEnds: Int? = nil,
+           isTaxable: Bool? = nil, // Required non-optional property
+           hasReadMore: Bool? = nil,
+           canAddNote: Bool? = nil,
+           canShowRemainedQuantity: Bool? = nil,
+           canUploadFile: Bool? = nil,
+           hasCustomForm: Bool? = nil,
+           hasMetadata: Bool? = nil,
+           isOnSale: Bool? = nil,
+           isHiddenQuantity: Bool? = nil,
+           isAvailable: Bool? = nil,
+           isOutOfStock: Bool? = nil,
+           isRequireShipping: Bool? = nil,
+           weight: Double? = nil,
+           calories: Double? = nil,
+           image: ImageModel? = nil,
+           currency: String? = nil
+       ) {
+           self.id = id
+           self.sku = sku
+           self.name = name
+           self.description = description
+           self.url = url
+           self.promotionTitle = promotionTitle
+           self.subtitle = subtitle
+           self.type = type
+           self.status = status
+           self.price = price
+           self.regularPrice = regularPrice
+           self.startingPrice = startingPrice
+           self.quantity = quantity
+           self.maxQuantity = maxQuantity
+           self.discountEnds = discountEnds
+           self.isTaxable = isTaxable
+           self.hasReadMore = hasReadMore
+           self.canAddNote = canAddNote
+           self.canShowRemainedQuantity = canShowRemainedQuantity
+           self.canUploadFile = canUploadFile
+           self.hasCustomForm = hasCustomForm
+           self.hasMetadata = hasMetadata
+           self.isOnSale = isOnSale
+           self.isHiddenQuantity = isHiddenQuantity
+           self.isAvailable = isAvailable
+           self.isOutOfStock = isOutOfStock
+           self.isRequireShipping = isRequireShipping
+           self.weight = weight
+           self.calories = calories
+           self.image = image
+           self.currency = currency
+       }
     
     enum CodingKeys: String,CodingKey {
         case id

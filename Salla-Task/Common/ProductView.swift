@@ -20,10 +20,17 @@ struct ProductView: View {
                 Text(product.name ?? .empty)
                     .lineLimit(1)
                     .font(.Regular.regular_16)
+                    .foregroundColor(.black)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+               
+                Text("Special Offer")
+                    .font(.Regular.regular_12)
+                    .foregroundColor(.gray)
                     .frame(maxWidth: .infinity, alignment: .trailing)
                 
-                Text("\(String(format: "%.2f", product.price ?? 0.0)) SAR")
+                Text("\(String(format: "%.2f", product.price ?? 0.0)) \(product.currency ?? .empty)")
                     .font(.Regular.regular_14)
+                    .foregroundColor(.black)
                     .padding(.top)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }

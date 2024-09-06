@@ -40,7 +40,7 @@ enum MockData {
         isRequireShipping: false,
         weight: nil,
         calories: nil,
-        image: Image(
+        image: ImageModel(
             url: "https://cdn.salla.sa/ydZbx/8f14a689-99d5-4df7-bfe8-0f1568383963-500x341.83673469388-kmz8WtSQD5xNXY3SIhk4LG6ZvyQaWw6zyOmFO8MV.png"
         ),
         currency: "SAR"
