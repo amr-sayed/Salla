@@ -1,0 +1,45 @@
+{
+    "status": 200,
+    "success": true,
+    "data": {
+        "id": 599203108,
+        "sku": null,
+        "name": "مع حقول مخصصة",
+        "description": "",
+        "url": "https://jalmatari.com/ar/NKRoQbq",
+        "promotion_title": null,
+        "subtitle": null,
+        "type": "product",
+        "status": "sale",
+        "price": 115,
+        "base_currency_price": {
+            "currency": "SAR",
+            "amount": 115
+        },
+        "sale_price": 0,
+        "regular_price": 115,
+        "starting_price": null,
+        "quantity": null,
+        "max_quantity": 500,
+        "discount_ends": null,
+        "is_taxable": true,
+        "has_read_more": false,
+        "can_add_note": false,
+        "can_show_remained_quantity": false,
+        "can_upload_file": false,
+        "has_custom_form": false,
+        "has_metadata": false,
+        "is_on_sale": false,
+        "is_hidden_quantity": false,
+        "is_available": true,
+        "is_out_of_stock": false,
+        "is_require_shipping": true,
+        "weight": "0.1 كجم",
+        "calories": null,
+        "image": {
+            "url": "https://cdn.salla.sa/ydZbx/73dc7c69-5797-497e-ab62-76382dd43619-350.06784260516x500-KoNbg8Xf84F5Z3nsV5h8IJWuYbzyc0sHQ6UohJNc.jpg",
+            "alt": "مع حقول مخصصة"
+        },
+        "currency": "SAR"
+    }
+}
