@@ -51,7 +51,7 @@ struct ProductView: View {
             .padding(.bottom,6)
             
         }
-        .background(Color.white)
+        .background(ConfigurationManager.shared.loadAppColor())
         .cornerRadius(10)
         .shadow(radius: 2)
     }

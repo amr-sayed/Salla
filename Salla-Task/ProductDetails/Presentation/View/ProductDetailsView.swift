@@ -26,14 +26,14 @@ struct ProductDetailsView: View {
             
             VStack(alignment: .leading, spacing: 16) {
                 Text(viewModel.product.name ?? .empty)
-                    .font(.Medium.medium_18)
+                    .font(.Regular.regular_16)
                 
                 Text("Buy now and pay now")
-                    .font(.Medium.medium_18)
+                    .font(.Regular.regular_16)
                     .foregroundColor(.gray)
                 
                 Text("\(String(format: "%.2f", viewModel.product.price ?? 0.0)) \(viewModel.product.currency ?? .empty)")
-                    .font(.Medium.medium_18)
+                    .font(.Regular.regular_16)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()

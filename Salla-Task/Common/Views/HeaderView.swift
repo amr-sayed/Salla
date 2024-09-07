@@ -24,7 +24,7 @@ struct HeaderView: View {
             })
             Spacer()
             Text(name)
-                .font(.Medium.medium_18)
+                .font(.Regular.regular_16)
                 .padding(10)
             Spacer()
             
