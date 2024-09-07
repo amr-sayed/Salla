@@ -44,14 +44,14 @@ struct ProductView: View {
                     .font(.Regular.regular_14)
             }
             .frame(maxWidth: .infinity)
-            .background(Color.black)
+            .background(ConfigurationManager.shared.loadAppColor())
             .cornerRadius(10)
             .foregroundColor(.white)
             .padding(.horizontal,6)
             .padding(.bottom,6)
             
         }
-        .background(ConfigurationManager.shared.loadAppColor())
+        .background(Color.white)
         .cornerRadius(10)
         .shadow(radius: 2)
     }
