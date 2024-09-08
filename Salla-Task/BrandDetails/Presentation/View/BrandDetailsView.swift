@@ -21,11 +21,16 @@ struct BrandDetailsView: View {
             LazyVGrid(columns: columns, spacing: 20) {
                 ForEach(viewModel.productList, id: \.id) { item in
                     NavigationLink(
-                        destination: ProductDetailsView(
-                            viewModel: ProductDetailsViewModel(productId: item.id ?? .empty)),
-                                   isActive: $shouldShowProductDetails
-                    ) {
+                            destination: ProductDetailsView(
+                                viewModel: ProductDetailsViewModel(productId: item.id ?? .empty)
+                            ),
+                            tag: item,
+                            selection: $viewModel.selectedProduct
+                        ){
                         ProductView(product: item)
+                            .onTapGesture {
+                                viewModel.selectedProduct = item
+                            }
                             .onAppear {
                                 if item == viewModel.productList.last {
                                     viewModel.loadMoreProducts()

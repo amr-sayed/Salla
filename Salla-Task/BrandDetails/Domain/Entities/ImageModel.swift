@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct ImageModel: Codable {
+struct ImageModel: Codable, Hashable {
     let url: String?
 }

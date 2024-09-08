@@ -11,10 +11,14 @@ import Combine
 class BrandDetailsService: BrandDetailsServiceContract {
     
     var apiService: APIServiceContract
+    var realmManager: RealmManagerContract
     
     
-    init(apiService: APIServiceContract = APIService.shared) {
+    init(
+        apiService: APIServiceContract = APIService.shared,
+        realmManager: RealmManagerContract = RealmManager.shared) {
         self.apiService = apiService
+            self.realmManager = realmManager
     }
     
     
@@ -34,11 +38,34 @@ class BrandDetailsService: BrandDetailsServiceContract {
             .setHeaders(using: headers)
             .build()
         
-        return apiService
-            .request(
-                using: request,
-                responseType: [Product].self
-            )
-            
+        if NetworkMonitor.shared.isConnected {
+            return apiService
+                .request(
+                    using: request,
+                    responseType: [Product].self
+                )
+        }else {
+            let cachedProducts = realmManager.getCachedProducts()
+            if cachedProducts.count > 0 {
+                let response = BaseResponse<[Product]>(
+                    status: 200,
+                    success: true,
+                    data: cachedProducts,
+                    cursor: Cursor(current: "", next: "")
+                )
+                
+                return Just(response)
+                    .eraseToBaseError()
+                    .eraseToAnyPublisher()
+            }
+        }
+        return Just(BaseResponse<[Product]>(
+            status: 200,
+            success: true,
+            data: [],
+            cursor: Cursor(current: "", next: "")
+        ))
+            .eraseToBaseError()
+            .eraseToAnyPublisher()
     }
 }

@@ -7,6 +7,7 @@ target 'Salla-Task' do
 
   # Pods for Salla-Task
   pod 'SDWebImageSwiftUI'
+  pod 'RealmSwift'
 
 
   target 'Salla-TaskTests' do
