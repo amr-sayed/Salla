@@ -41,6 +41,10 @@ class ConfigurationManager {
     func loadAppColor() -> Color {
         return configuration.appColor.IntToHex()
     }
+    
+    func loadIdentifier() -> Int {
+        return configuration.id
+    }
 }
 
 private extension UInt {
