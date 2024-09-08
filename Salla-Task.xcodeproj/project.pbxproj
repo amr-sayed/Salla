@@ -96,6 +96,7 @@
 		B4C969E02C8E1FD0003348D1 /* RealmManagerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C969DF2C8E1FD0003348D1 /* RealmManagerContract.swift */; };
 		B4C969E32C8E27CD003348D1 /* ViewConstatnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C969E22C8E27CD003348D1 /* ViewConstatnts.swift */; };
 		B4C969E52C8E2849003348D1 /* ErrorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C969E42C8E2849003348D1 /* ErrorConstants.swift */; };
+		B4C969E72C8E3B9F003348D1 /* ProductDetailsRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C969E62C8E3B9F003348D1 /* ProductDetailsRealm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +213,7 @@
 		B4C969DF2C8E1FD0003348D1 /* RealmManagerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManagerContract.swift; sourceTree = "<group>"; };
 		B4C969E22C8E27CD003348D1 /* ViewConstatnts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstatnts.swift; sourceTree = "<group>"; };
 		B4C969E42C8E2849003348D1 /* ErrorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorConstants.swift; sourceTree = "<group>"; };
+		B4C969E62C8E3B9F003348D1 /* ProductDetailsRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsRealm.swift; sourceTree = "<group>"; };
 		C9840449C11453E4D9062FD6 /* Pods-Salla-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salla-Task.debug.xcconfig"; path = "Target Support Files/Pods-Salla-Task/Pods-Salla-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		E07A454FECF3DC7C55367F85 /* Pods-Salla-Task-Salla-TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salla-Task-Salla-TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Salla-Task-Salla-TaskUITests/Pods-Salla-Task-Salla-TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FD6A35DE67CC588D7FB76479 /* Pods-Salla-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salla-Task.release.xcconfig"; path = "Target Support Files/Pods-Salla-Task/Pods-Salla-Task.release.xcconfig"; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 				B43A622F2C8D846C0000932B /* ProductRealm.swift */,
 				B43A62312C8D849E0000932B /* RealmManager.swift */,
 				B4C969DF2C8E1FD0003348D1 /* RealmManagerContract.swift */,
+				B4C969E62C8E3B9F003348D1 /* ProductDetailsRealm.swift */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -1253,6 +1256,7 @@
 				B4AE7F7D2C8B3ADE00D9AFED /* ProductDetailsRepository.swift in Sources */,
 				B4B1C7712C88EF0C00476C8B /* BrandDetailsViewModel.swift in Sources */,
 				B4B1C73D2C88ED1000476C8B /* ErrorType+Title.swift in Sources */,
+				B4C969E72C8E3B9F003348D1 /* ProductDetailsRealm.swift in Sources */,
 				B43A62262C8C89F80000932B /* Configuration.swift in Sources */,
 				B4AE7F3E2C89B69D00D9AFED /* BrandDetailsRepository.swift in Sources */,
 				B4B1C7572C88ED1000476C8B /* View+Helpers.swift in Sources */,

@@ -17,5 +17,12 @@ protocol RealmManagerContract {
     
     func convertRealmToProduct(productRealm: ProductRealm) -> Product
     
+    func convertToProductDetails(from realmProduct: ProductDetailsRealm) -> ProductDetails
+    
+    func convertToProductDetailsRealm(from productDetails: ProductDetails) -> ProductDetailsRealm
+    
+    func saveProductDetailsToRealm(productDetails: ProductDetails)
+    
+    func fetchProductDetails(productId: Int) -> ProductDetails?
 
 }

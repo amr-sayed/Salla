@@ -16,9 +16,10 @@ class BrandDetailsService: BrandDetailsServiceContract {
     
     init(
         apiService: APIServiceContract = APIService.shared,
-        realmManager: RealmManagerContract = RealmManager.shared) {
+        realmManager: RealmManagerContract = RealmManager.shared
+    ) {
         self.apiService = apiService
-            self.realmManager = realmManager
+        self.realmManager = realmManager
     }
     
     
@@ -65,7 +66,7 @@ class BrandDetailsService: BrandDetailsServiceContract {
             data: [],
             cursor: Cursor(current: "", next: "")
         ))
-            .eraseToBaseError()
-            .eraseToAnyPublisher()
+        .eraseToBaseError()
+        .eraseToAnyPublisher()
     }
 }

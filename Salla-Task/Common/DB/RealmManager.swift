@@ -108,4 +108,92 @@ class RealmManager: RealmManagerContract {
             currency: productRealm.currency
         )
     }
+    
+    
+    func fetchProductDetails(productId: Int) -> ProductDetails? {
+        let realm = try! Realm()
+        
+        // Try to fetch the product from Realm
+        if let cachedProduct = realm.object(ofType: ProductDetailsRealm.self, forPrimaryKey: productId) {
+            // Convert to the struct model
+            let productDetails = convertToProductDetails(from: cachedProduct)
+            return productDetails
+        }
+        return nil
+    }
+    
+    func saveProductDetailsToRealm(productDetails: ProductDetails) {
+        let realm = try! Realm()
+        
+        let productRealm = convertToProductDetailsRealm(from: productDetails)
+        
+        try! realm.write {
+            realm.add(productRealm, update: .all)
+        }
+    }
+    
+    func convertToProductDetails(from realmProduct: ProductDetailsRealm) -> ProductDetails {
+        return ProductDetails(
+            id: realmProduct.id,
+            sku: realmProduct.sku,
+            name: realmProduct.name,
+            description: realmProduct.productDescription,
+            url: realmProduct.url,
+            promotionTitle: realmProduct.promotionTitle,
+            subtitle: realmProduct.subtitle,
+            type: realmProduct.type,
+            status: realmProduct.status,
+            price: realmProduct.price,
+            regularPrice: realmProduct.regularPrice,
+            startingPrice: realmProduct.startingPrice,
+            quantity: realmProduct.quantity,
+            maxQuantity: realmProduct.maxQuantity,
+            discountEnds: realmProduct.discountEnds,
+            isTaxable: realmProduct.isTaxable,
+            hasReadMore: false,
+            canAddNote: false,
+            canShowRemainedQuantity: false,
+            canUploadFile: false,
+            hasCustomForm: false,
+            hasMetadata: false,
+            isOnSale: false,
+            isHiddenQuantity: false,
+            isAvailable: realmProduct.isAvailable,
+            isOutOfStock: realmProduct.isOutOfStock,
+            isRequireShipping: realmProduct.isRequireShipping,
+            weight: realmProduct.weight,
+            calories: realmProduct.calories,
+            image: ProductImage(url: realmProduct.imageUrl, alt: realmProduct.imageAlt),
+            currency: realmProduct.currency
+        )
+    }
+    
+    func convertToProductDetailsRealm(from productDetails: ProductDetails) -> ProductDetailsRealm {
+        let productRealm = ProductDetailsRealm()
+        productRealm.id = productDetails.id ?? 0
+        productRealm.sku = productDetails.sku
+        productRealm.name = productDetails.name
+        productRealm.productDescription = productDetails.description
+        productRealm.url = productDetails.url
+        productRealm.promotionTitle = productDetails.promotionTitle
+        productRealm.subtitle = productDetails.subtitle
+        productRealm.type = productDetails.type
+        productRealm.status = productDetails.status
+        productRealm.price = productDetails.price ?? 0
+        productRealm.regularPrice = productDetails.regularPrice ?? 0
+        productRealm.startingPrice = productDetails.startingPrice ?? 0
+        productRealm.quantity = productDetails.quantity ?? 0
+        productRealm.maxQuantity = productDetails.maxQuantity ?? 0
+        productRealm.discountEnds = productDetails.discountEnds ?? ""
+        productRealm.isTaxable = productDetails.isTaxable ?? false
+        productRealm.isAvailable = productDetails.isAvailable ?? false
+        productRealm.isOutOfStock = productDetails.isOutOfStock ?? false
+        productRealm.isRequireShipping = productDetails.isRequireShipping ?? false
+        productRealm.weight = productDetails.weight ?? "0.0"
+        productRealm.calories = productDetails.calories ?? "0.0"
+        productRealm.imageUrl = productDetails.image?.url
+        productRealm.imageAlt = productDetails.image?.alt
+        productRealm.currency = productDetails.currency
+        return productRealm
+    }
 }
