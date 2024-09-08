@@ -18,7 +18,7 @@ struct BrandDetailsView: View {
     
     var body: some View {
         ScrollView(.vertical) {
-            LazyVGrid(columns: columns, spacing: 20) {
+            LazyVGrid(columns: columns, spacing: Spacing.spacing_20) {
                 ForEach(viewModel.productList, id: \.id) { item in
                     NavigationLink(
                             destination: ProductDetailsView(

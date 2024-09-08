@@ -11,12 +11,12 @@ import SDWebImageSwiftUI
 struct ProductView: View {
     let product: Product
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: .zero) {
             WebImage(url: URL(string: product.image?.url ?? .empty))
                 .resizable()
-                .frame(height: 150)
+                .frame(height: Spacing.spacing_150)
             
-            VStack(spacing: 0) {
+            VStack(spacing: .zero) {
                 Text(product.name ?? .empty)
                     .lineLimit(1)
                     .font(.Regular.regular_16)
@@ -34,25 +34,25 @@ struct ProductView: View {
                     .padding(.top)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
-            .padding(.horizontal, 8)
+            .padding(.horizontal, Spacing.spacing_8)
             
             Button {
                 
             } label: {
                 Text("Add to cart")
-                    .padding(.vertical, 6)
+                    .padding(.vertical, Spacing.spacing_6)
                     .font(.Regular.regular_14)
             }
             .frame(maxWidth: .infinity)
             .background(ConfigurationManager.shared.loadAppColor())
-            .cornerRadius(10)
+            .cornerRadius(Spacing.spacing_10)
             .foregroundColor(.white)
-            .padding(.horizontal,6)
-            .padding(.bottom,6)
+            .padding(.horizontal,Spacing.spacing_6)
+            .padding(.bottom,Spacing.spacing_6)
             
         }
         .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 2)
+        .cornerRadius(Spacing.spacing_10)
+        .shadow(radius: Spacing.spacing_2)
     }
 }

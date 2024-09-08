@@ -21,10 +21,10 @@ struct ProductDetailsView: View {
             
             WebImage(url: URL(string: viewModel.product.image?.url ?? .empty))
                 .resizable()
-                .frame(width: 200,height: 300)
+                .frame(height: Spacing.spacing_300)
                 .padding()
             
-            VStack(alignment: .leading, spacing: 16) {
+            VStack(alignment: .leading, spacing: Spacing.spacing_16) {
                 Text(viewModel.product.name ?? .empty)
                     .font(.Regular.regular_16)
                 
