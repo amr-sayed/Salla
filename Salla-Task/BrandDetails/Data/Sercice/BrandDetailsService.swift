@@ -11,15 +11,12 @@ import Combine
 class BrandDetailsService: BrandDetailsServiceContract {
     
     var apiService: APIServiceContract
-    var realmManager: RealmManagerContract
     
     
     init(
-        apiService: APIServiceContract = APIService.shared,
-        realmManager: RealmManagerContract = RealmManager.shared
+        apiService: APIServiceContract = APIService.shared
     ) {
         self.apiService = apiService
-        self.realmManager = realmManager
     }
     
     
@@ -28,7 +25,7 @@ class BrandDetailsService: BrandDetailsServiceContract {
         let headers: HTTPHeaders = [
             "Currency": "SAR",
             "AppVersion": "3.0.0",
-            "Store-Identifier": "1328842359",
+            "Store-Identifier": "\(ConfigurationManager.shared.loadIdentifier())",
         ]
         let requestObj = BrandDetailsRequest(page: page, per_page: perPage)
         
@@ -39,34 +36,10 @@ class BrandDetailsService: BrandDetailsServiceContract {
             .setHeaders(using: headers)
             .build()
         
-        if NetworkMonitor.shared.isConnected {
-            return apiService
-                .request(
-                    using: request,
-                    responseType: [Product].self
-                )
-        }else {
-            let cachedProducts = realmManager.getCachedProducts()
-            if cachedProducts.count > 0 {
-                let response = BaseResponse<[Product]>(
-                    status: 200,
-                    success: true,
-                    data: cachedProducts,
-                    cursor: Cursor(current: "", next: "")
-                )
-                
-                return Just(response)
-                    .eraseToBaseError()
-                    .eraseToAnyPublisher()
-            }
-        }
-        return Just(BaseResponse<[Product]>(
-            status: 200,
-            success: true,
-            data: [],
-            cursor: Cursor(current: "", next: "")
-        ))
-        .eraseToBaseError()
-        .eraseToAnyPublisher()
+        return apiService
+            .request(
+                using: request,
+                responseType: [Product].self
+            )
     }
 }

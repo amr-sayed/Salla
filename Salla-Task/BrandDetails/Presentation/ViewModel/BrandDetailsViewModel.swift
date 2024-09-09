@@ -12,9 +12,7 @@ class BrandDetailsViewModel: BaseViewModel {
     @Published var productList: [Product] = .init()
     @Published var selectedProduct: Product? = nil 
 
-    
     private let brandDetailsUsecase:  BrandDetailsUsecaseContract
-    private let realmManager: RealmManagerContract
     private var hasMoreData = true
     private var currentPage = 1
     
@@ -23,11 +21,9 @@ class BrandDetailsViewModel: BaseViewModel {
         realmManager: RealmManagerContract = RealmManager.shared
     ) {
         self.brandDetailsUsecase = brandDetailsUsecase
-        self.realmManager = realmManager
         super.init()
         loadBrandProducts()
     }
-    
     
     func loadMoreProducts() {
         if hasMoreData {
@@ -54,7 +50,6 @@ class BrandDetailsViewModel: BaseViewModel {
     func handleSuccessBrandDetails(_ response: BaseResponse<[Product]>) {
         isLoading = false
         productList.append(contentsOf: response.data)
-        realmManager.cacheProductData(productList)
         if response.cursor?.next != nil {
             hasMoreData = true
         }else {

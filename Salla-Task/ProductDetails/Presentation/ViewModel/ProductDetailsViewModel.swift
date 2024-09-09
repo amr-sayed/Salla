@@ -12,18 +12,14 @@ class ProductDetailsViewModel: BaseViewModel {
     @Published var  product: ProductDetails = .init()
     
     private let usecase: ProductDetailsUsecaseContract
-    private let realmManager: RealmManagerContract
-
     private var productId: String
     
     init(
         usecase: ProductDetailsUsecaseContract = ProductDetailsUsecase(),
-        realmManager: RealmManagerContract = RealmManager.shared,
         productId: String
     ) {
         self.usecase = usecase
         self.productId = productId
-        self.realmManager = realmManager
         super.init()
         loadProductDetails()
     }
@@ -41,12 +37,10 @@ class ProductDetailsViewModel: BaseViewModel {
                 self.handleSuccessProductDetails(response)
             }
             .store(in: &cancellables)
-
     }
     
     func handleSuccessProductDetails(_ response: BaseResponse<ProductDetails>) {
         isLoading = false
         product = response.data
-        realmManager.saveProductDetailsToRealm(productDetails: response.data)
     }
 }

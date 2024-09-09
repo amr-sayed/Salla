@@ -35,34 +35,10 @@ class ProdcutDetailsService: ProductDetailsServiceContract {
             .setHeaders(using: headers)
             .build()
         
-        
-        if NetworkMonitor.shared.isConnected {
-            return apiService
-                .request(
-                    using: request,
-                    responseType: ProductDetails.self
-                )
-        }else {
-            let cachedProduct = realmManager.fetchProductDetails(productId: Int(productId) ?? 0)
-            if cachedProduct != nil {
-                let response = BaseResponse<ProductDetails>(
-                    status: 200,
-                    success: true,
-                    data: cachedProduct ?? ProductDetails(),
-                    cursor: Cursor(current: "", next: ""
-                                  ))
-                return Just(response)
-                    .eraseToBaseError()
-                    .eraseToAnyPublisher()
-            }
-        }
-        return Just(BaseResponse<ProductDetails>(
-            status: 200,
-            success: true,
-            data: ProductDetails(),
-            cursor: Cursor(current: "", next: "")
-        ))
-        .eraseToBaseError()
-        .eraseToAnyPublisher()
+        return apiService
+            .request(
+                using: request,
+                responseType: ProductDetails.self
+            )
     }
 }
